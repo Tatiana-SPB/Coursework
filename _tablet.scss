@@ -1,0 +1,140 @@
+@media (min-width: 476px) and (max-width: 768px) {
+
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .header {
+        height: 700px;
+
+        &__text {
+            position: absolute;
+            z-index: 3;
+        }
+
+        &__heading {
+            font-size: 40px;
+        }
+
+        &__description {
+            width: 100%;
+            padding-bottom: 36px;
+            font-size: 1rem;
+            line-height: 100%;
+        }
+    }
+
+    .scrollbar {
+
+        &__box {
+            width: 2400px;
+            gap: 40px;
+            padding: 12px 24px 12px 24px;
+        }
+
+        &__text {
+            font-size: 24px;
+        }
+    }
+
+        .main {
+            padding-bottom: 64px;
+
+            &__content-wrapper {
+                display: none;
+            }
+        }
+
+        .about {
+            padding-bottom: 3rem;
+
+            &__heading {
+                padding-top: 3rem;
+                font-size: 3rem;
+            }
+
+            &__text {
+                width: 100%;
+                padding-bottom: 3rem;
+                font-size: 1.3rem;
+                line-height: 100%;
+            }
+
+            &__game {
+                &-box {
+                    grid-template-rows: 390px 3px 406px;
+                    gap: 24px;
+                }
+
+                &-img {
+                    height: 220px;
+                }
+
+                &-number {
+                    margin-left: 0.8rem;
+                    font-size: 0.8rem;
+                    line-height: 16px;
+                }
+
+                &-name {
+                    padding-top: 0.8rem;
+                    margin-top: 0.8rem;
+                    margin-left: 0.8rem;
+                    font-size: 1.5rem;
+                }
+
+                &-width {
+                    width: 200px;
+                }
+            }
+        }
+
+        .content {
+
+            &__heading {
+                padding-bottom: 3rem;
+                font-size: 3rem;
+            }
+
+            &__game {
+                margin-bottom: 24px;
+
+                &-text {
+                    width: 50%;
+                    height: 250px;
+                    padding: 2rem;
+                }
+
+                &-name {
+                    width: 50%;
+                    padding-bottom: 1rem;
+                    font-size: 2.5rem;
+                }
+
+                &-info {
+                    padding-bottom: 24px;
+                    font-size: 1.3rem;
+                    line-height: 100%;
+                }
+
+                &-img {
+                    width: 50%;
+                    height: 400px;
+                }
+            }
+
+            &__link {
+                height: 66px;
+            }
+        }
+
+        .footer {
+
+            &__text {
+                padding-top: 48px;
+                padding-bottom: 48px;
+                font-size: 1.3rem;
+            }
+        }
+    }
