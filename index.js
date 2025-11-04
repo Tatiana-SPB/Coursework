@@ -44,7 +44,7 @@ function simpleArithmetic() {
     let correctAnswerCountSimpleArithmetic = 0;
     const totalTasks = 5;
 
-    for (let i = 0; i <= totalTasks; i++) {
+    for (let i = 0; i < totalTasks; i++) {
         const randomNumber1 = getRandomIntInclusive(1, 10);
         const randomNumber2 = getRandomIntInclusive(1, 10);
 
@@ -61,12 +61,15 @@ function simpleArithmetic() {
                 break;
 
             case '-':
-                if (randomNumber1 < randomNumber2) {
-                    [randomNumber1, randomNumber2] = [randomNumber2, randomNumber1];
+                if (randomNumber2 < randomNumber1) {
                     task = `${randomNumber1} - ${randomNumber2}`;
+                    correctAnswerSimpleArithmetic = randomNumber1 - randomNumber2;
+                    break;
+                } else {
+                    task = `${randomNumber2} - ${randomNumber1}`;
+                    correctAnswerSimpleArithmetic = randomNumber2 - randomNumber1;
+                    break;
                 }
-                correctAnswerSimpleArithmetic = randomNumber1 - randomNumber2;
-                break;
 
             case '*':
                 task = `${randomNumber1} * ${randomNumber2}`;
@@ -108,6 +111,10 @@ function flipTheText() {
     while (userText !== null) {
         userText = prompt('Введите текст, который будет перевернут');
 
+        if (userText === null) {
+            break;
+        }
+
         let reverseUserText = userText.split('').reverse().join('');
 
         alert(`Готово! Если слово ${userText} перевернуть, то получится ${reverseUserText}`)
@@ -115,7 +122,6 @@ function flipTheText() {
     }
 
     alert('Операция отменена пользователем');
-    return;
 }
 
 
